@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/add_config"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/startRidePopupTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:text="START A NEW SHARE RIDE"
+        android:textSize="19sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/startDateText"
+        android:layout_width="144dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/custom_input"
+        android:hint="12/22/2021"
+        android:lineSpacingExtra="5dp"
+        android:paddingStart="12dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="8dp"
+        android:singleLine="true"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/startRidePopupTitle" />
+
+    <EditText
+        android:id="@+id/startTimeText"
+        android:layout_width="144dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/custom_input"
+        android:hint="15:00"
+        android:lineSpacingExtra="5dp"
+        android:paddingStart="12dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="8dp"
+        android:singleLine="true"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/startRidePopupTitle" />
+
+    <Spinner
+        android:id="@+id/numPeopleSpinner"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:autofillHints="2"
+        android:background="@drawable/custom_spinner"
+        android:dropDownVerticalOffset="40dp"
+        android:lineSpacingExtra="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/startDateText" />
+
+    <Button
+        android:id="@+id/startRideDialogCancelButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="16dp"
+        android:background="@android:color/transparent"
+        android:text="CANCEL"
+        android:textColor="@color/ND_blue"
+        android:textColorHint="@color/ND_blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/startRideDialogNextButton"
+        app:layout_constraintTop_toBottomOf="@+id/departureText" />
+
+    <Button
+        android:id="@+id/startRideDialogNextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@android:color/transparent"
+        android:text="NEXT"
+        android:textColor="@color/ND_gold"
+        android:textColorHint="@color/ND_gold"
+        app:layout_constraintEnd_toEndOf="@+id/departureText"
+        app:layout_constraintTop_toBottomOf="@+id/departureText" />
+
+    <TextView
+        android:id="@+id/startDateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="27dp"
+        android:background="@color/white"
+        android:paddingStart="2dp"
+        android:paddingEnd="2dp"
+        android:text="Date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/startRidePopupTitle" />
+
+    <TextView
+        android:id="@+id/startTimeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="27dp"
+        android:background="@color/white"
+        android:paddingStart="2dp"
+        android:paddingEnd="2dp"
+        android:text="Time"
+        app:layout_constraintStart_toStartOf="@+id/startTimeText"
+        app:layout_constraintTop_toBottomOf="@+id/startRidePopupTitle" />
+
+    <ImageButton
+        android:id="@+id/startDateImageButton"
+        android:layout_width="39dp"
+        android:layout_height="39dp"
+        android:layout_marginEnd="4dp"
+        android:background="@android:color/transparent"
+        android:clickable="true"
+        android:paddingTop="0dp"
+        app:layout_constraintEnd_toEndOf="@+id/startDateText"
+        app:layout_constraintTop_toTopOf="@+id/startDateText"
+        app:srcCompat="@drawable/ic_baseline_calendar_today_24" />
+
+    <ImageButton
+        android:id="@+id/startTimeImageButton"
+        android:layout_width="39dp"
+        android:layout_height="39dp"
+        android:layout_marginEnd="4dp"
+        android:background="@android:color/transparent"
+        android:clickable="true"
+        app:layout_constraintEnd_toEndOf="@+id/startTimeText"
+        app:layout_constraintTop_toTopOf="@+id/startTimeText"
+        app:srcCompat="@drawable/ic_baseline_access_time_24" />
+
+    <TextView
+        android:id="@+id/numPeopleTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/white"
+        android:paddingStart="2dp"
+        android:paddingEnd="2dp"
+        android:text="Number of People"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/startDateText" />
+
+
+    <EditText
+        android:id="@+id/destinationText"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/custom_input"
+        android:hint="Your destination"
+        android:lineSpacingExtra="5dp"
+        android:paddingStart="12dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="8dp"
+        android:singleLine="true"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/numPeopleSpinner" />
+
+
+    <TextView
+        android:id="@+id/destinationTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@color/white"
+        android:text="To"
+        app:layout_constraintStart_toStartOf="@+id/numPeopleTitle"
+        app:layout_constraintTop_toBottomOf="@+id/numPeopleSpinner" />
+
+
+    <EditText
+        android:id="@+id/departureText"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/custom_input"
+        android:hint="Your meetup spot"
+        android:lineSpacingExtra="5dp"
+        android:paddingStart="12dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="8dp"
+        android:singleLine="true"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/destinationText" />
+
+    <TextView
+        android:id="@+id/departureTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="From"
+        android:background="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/destinationTitle"
+        app:layout_constraintTop_toBottomOf="@+id/destinationText" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

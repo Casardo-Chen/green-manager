@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Crepe</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="CO2">Greenpoints:   57 \u2618</string>
+
+</resources>
