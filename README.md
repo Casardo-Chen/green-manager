@@ -1,5 +1,5 @@
 # Green-Manager
-A ride sharing app for ND students (Hesburgh Hackathon 2022- Sustainability)
+An Android ride-sharing app for Notre Dame students (Hesburgh Hackathon 2022- Sustainability)
 
 ## Team
 Meng Chen, Colin Fang, Danny Tong, Ryan Lin
